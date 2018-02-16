@@ -40,6 +40,7 @@ assert.ok(errored);
 var stream = require('stream');
 var util = require('util');
 
+var prependListener = EventEmitter.prototype.prependListener;
 delete EventEmitter.prototype.prependListener;
 
 function Writable() {
@@ -57,3 +58,5 @@ util.inherits(Readable, stream.Stream);
 var w = new Writable();
 var r = new Readable();
 r.pipe(w);
+
+EventEmitter.prototype.prependListener = prependListener;
