@@ -23,8 +23,10 @@
     "node": ">=0.4.x"
   },
   "devDependencies": {
+    "buffer": "^4.9.1",
     "isarray": "^2.0.2",
     "object-keys": "^1.0.11",
+    "readable-stream": "^2.2.11",
     "tape": "^4.8.0",
     "zuul": "^3.11.1"
   },

@@ -6,10 +6,10 @@ require('./legacy-compat');
 // and also have browserify be able to statically analyze this file
 var orig_require = require;
 var require = function(file) {
-    test(file, function(t) {
-        orig_require(file);
-        t.end();
-    });
+  test(file, function(t) {
+    orig_require(file);
+    t.end();
+  });
 };
 
 require('./add-listeners.js');
