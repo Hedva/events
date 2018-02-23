@@ -23,16 +23,16 @@
     "node": ">=0.4.x"
   },
   "devDependencies": {
+    "airtap": "0.0.2",
     "buffer": "^4.9.1",
     "isarray": "^2.0.2",
     "object-keys": "^1.0.11",
     "readable-stream": "^2.2.11",
-    "tape": "^4.8.0",
-    "zuul": "^3.11.1"
+    "tape": "^4.8.0"
   },
   "scripts": {
     "test": "node tests/index.js",
-    "test:browsers": "zuul -- tests/index.js"
+    "test:browsers": "airtap tests/index.js"
   },
   "license": "MIT"
 }
